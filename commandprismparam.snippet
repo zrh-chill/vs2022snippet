@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>cmdprismparam</Title>
+			<Shortcut>cmdprismparam</Shortcut>
+			<Description>prism的带参命令的代码片段</Description>
+			<Author>decade zhang</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal Editable="false">
+					<ID>type</ID>
+					<ToolTip>命令类型</ToolTip>
+					<Default>DelegateCommand</Default>
+				</Literal>
+				<Literal>
+					<ID>typeT</ID>
+					<ToolTip>命令参数类型</ToolTip>
+					<Default>object</Default>
+				</Literal>
+				<Literal>
+					<ID>commandName</ID>
+					<ToolTip>命令名</ToolTip>
+					<Default>CommandName</Default>
+				</Literal>				
+			</Declarations>
+			<Code Language="csharp">
+			<![CDATA[
+					public $type$<$typeT$> $commandName$ => new $type$<$typeT$>((o) =>
+					{
+
+					});
+					$end$]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
